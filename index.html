@@ -58,5 +58,16 @@
         <li><a href="https://exambhai.com">https://exambhai.com</a> — Free NTA & TCS pattern online mock tests with detailed solutions.</li>
     </ul>
 
+
+
+    <h2>Latest AI Generated Articles</h2>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
 </body>
 </html>
